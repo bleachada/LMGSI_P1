@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Movie Database Maqueta</title>
+  <meta name="description" content="Pàgina web de cerca de pel·lícules amb accés a la base de dades de The Movie Database (TMDB). Permet als usuaris buscar informació sobre pel·lícules i veure resultats.">
+  <title>The Movie Database - Contacte</title>
+  <link rel="icon" type="image/png" href="/imgs/icon/camara-de-video.png">
 </head>
 <body>
   <header>
@@ -24,8 +26,10 @@
     <h1>BUSCAR una pel·lícula</h1>
     <p> Milions de títols, un sol cercador.</p> 
     <div>
-      <input type="text" id="Buscador" name="Buscador" placeholder="Cerca una pel·lícula, per exemple 'The Batman'.">
+      <form method = "get" action="https://www.themoviedb.org/search">  
+      <input type="search" name ="query" id="Buscador" name="Buscador" placeholder="Cerca una pel·lícula, per exemple 'The Batman'." required>
       <button type="submit">Cercar</button>
+      </form>
     </div>
     <section>
       <h2>RESULTATS</h2>
